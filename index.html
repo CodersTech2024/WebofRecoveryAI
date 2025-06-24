@@ -1,193 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RecoveryAI – Combating Drug Addiction with AI</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f9fbfd;
-      color: #2c3e50;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #eef5ff, #f0fff4);
+      color: #1f2937;
     }
-    header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e0ecff;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+
+    h1, h2 {
+      color: #075985;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.7;
     }
-    section {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
+
+    .section {
+      margin-bottom: 50px;
     }
-    section h2 {
-      color: #1a1a1a;
-      margin-bottom: 10px;
-    }
-    .features, .goals, .sdgs {
+
+    .card-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
+
     .card {
-      flex: 1 1 280px;
-      background: white;
+      flex: 1 1 250px;
+      background: #f9fafb;
       padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+    }
+
+    canvas {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 20px;
+      background: white;
+      padding: 15px;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    .charts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-    }
-    canvas {
-      max-width: 450px;
-      background: #fff;
-      padding: 15px;
-      border-radius: 12px;
-    }
+
     footer {
-      background: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 20px;
       font-size: 0.9rem;
+      color: #6b7280;
+      margin: 40px 0 20px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>RecoveryAI</h1>
-  <p>Using Artificial Intelligence to Fight Drug Addiction & Save Lives</p>
-</header>
-
-<section>
-  <h2>🧠 What is RecoveryAI?</h2>
-  <p>
-    <strong>RecoveryAI</strong> is an intelligent solution designed to assist in detecting, preventing, and treating drug addiction using Artificial Intelligence. It analyzes behavior patterns, detects early signs of relapse, and connects people with the help they need — when they need it most.
-  </p>
-</section>
-
-<section>
-  <h2>🚨 The Problem</h2>
-  <p>
-    Millions of people suffer from drug addiction worldwide, with limited access to real-time support. Traditional systems often miss early warning signs. Relapse rates are high, and many people feel alone in their recovery.
-  </p>
-</section>
-
-<section>
-  <h2>🎯 Our Goals</h2>
-  <div class="goals">
-    <div class="card">✅ Detect relapse signs using AI analysis</div>
-    <div class="card">✅ Support recovery with smart daily check-ins</div>
-    <div class="card">✅ Raise awareness through AI-powered education</div>
-    <div class="card">✅ Help doctors and families with smart alerts</div>
+<div class="container">
+  <div class="section" style="text-align: center;">
+    <div style="font-size: 2.5rem; color: #2563eb;">💙</div>
+    <h1>Welcome to RecoveryAI</h1>
+    <p>A smart AI-powered initiative to fight drug addiction, support recovery, and save lives using technology and compassion.</p>
   </div>
-</section>
 
-<section>
-  <h2>🧩 Features of RecoveryAI</h2>
-  <div class="features">
-    <div class="card">💬 Chatbot check-ins with emotion detection</div>
-    <div class="card">📈 Mood & habit tracking dashboard</div>
-    <div class="card">🔔 Alert system for high-risk users</div>
-    <div class="card">📚 Interactive quizzes to educate and engage</div>
+  <div class="section">
+    <h2>🧠 What is RecoveryAI?</h2>
+    <p>
+      RecoveryAI is a digital assistant powered by artificial intelligence that helps individuals overcome drug addiction. It detects early signs of relapse, provides mental and emotional support, and educates users and families through AI-generated insights and alerts.
+    </p>
   </div>
-</section>
 
-<section>
-  <h2>🌐 Aligned with UN Sustainable Development Goals</h2>
-  <div class="sdgs">
-    <div class="card">Goal 3: Good Health and Well-being</div>
-    <div class="card">Goal 4: Quality Education on Drug Risks</div>
-    <div class="card">Goal 16: Peace, Justice & Strong Institutions</div>
+  <div class="section">
+    <h2>🎯 Goals of RecoveryAI</h2>
+    <div class="card-grid">
+      <div class="card">✅ Detect relapse signs early</div>
+      <div class="card">✅ Reduce drug-related deaths</div>
+      <div class="card">✅ Support mental health & recovery</div>
+      <div class="card">✅ Educate people using AI</div>
+    </div>
   </div>
-</section>
 
-<section>
-  <h2>📊 Drug Addiction Data</h2>
-  <p>The following graphs show global drug abuse trends and recovery progress statistics.</p>
-  <div class="charts">
-    <canvas id="barChart"></canvas>
-    <canvas id="pieChart"></canvas>
+  <div class="section">
+    <h2>🧩 Key Features</h2>
+    <div class="card-grid">
+      <div class="card">💬 Chatbot for daily check-ins</div>
+      <div class="card">📈 Progress and mood tracker</div>
+      <div class="card">🔔 Smart alerts to caregivers</div>
+      <div class="card">📚 AI-powered learning tools</div>
+    </div>
   </div>
-</section>
 
-<section>
-  <h2>🤖 How AI Helps</h2>
-  <p>
-    AI algorithms in RecoveryAI learn from user behavior, recognize emotional changes, and trigger alerts when a user may be at risk of relapse. It also adapts its support messages and educational content based on each user's journey.
-  </p>
-</section>
+  <div class="section">
+    <h2>📊 Drug Abuse Trends (2018–2024)</h2>
+    <p>This line chart visualizes the global trends in drug users, deaths, and average age of affected individuals.</p>
+    <canvas id="lineChart"></canvas>
+  </div>
+
+  <div class="section">
+    <h2>🌱 UN Sustainable Development Goals</h2>
+    <div class="card-grid">
+      <div class="card">Goal 3: Good Health and Well-being</div>
+      <div class="card">Goal 4: Quality Education</div>
+      <div class="card">Goal 16: Peace & Justice</div>
+    </div>
+  </div>
+</div>
 
 <footer>
-  &copy; 2025 RecoveryAI Team | Made with 💙 for a healthier future
+  © 2025 RecoveryAI Team | Designed for a healthier tomorrow 💙
 </footer>
 
 <script>
-  const barChart = new Chart(document.getElementById("barChart"), {
-    type: 'bar',
+  const lineChart = new Chart(document.getElementById("lineChart"), {
+    type: 'line',
     data: {
-      labels: ["Opioids", "Cannabis", "Cocaine", "Alcohol", "Amphetamines"],
-      datasets: [{
-        label: "Addicted Population (Millions)",
-        data: [53, 192, 21, 237, 34],
-        backgroundColor: ["#e74c3c", "#3498db", "#f39c12", "#8e44ad", "#1abc9c"]
-      }]
+      labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+      datasets: [
+        {
+          label: "Total Users (millions)",
+          data: [180, 190, 205, 215, 230, 245, 260],
+          borderColor: "#2563eb",
+          backgroundColor: "rgba(37, 99, 235, 0.1)",
+          tension: 0.4
+        },
+        {
+          label: "Drug-Related Deaths (thousands)",
+          data: [120, 130, 145, 160, 175, 180, 200],
+          borderColor: "#dc2626",
+          backgroundColor: "rgba(220, 38, 38, 0.1)",
+          tension: 0.4
+        },
+        {
+          label: "Average Age of Users",
+          data: [29, 30, 30.5, 31, 32, 32.5, 33],
+          borderColor: "#16a34a",
+          backgroundColor: "rgba(22, 163, 74, 0.1)",
+          tension: 0.4
+        }
+      ]
     },
     options: {
+      responsive: true,
       plugins: {
         title: {
-          display: true,
-          text: "Global Drug Abuse by Type"
+          display: false
+        },
+        legend: {
+          position: 'bottom'
         }
       },
-      responsive: true,
       scales: {
         y: {
-          beginAtZero: true
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: "Values (millions, thousands, age)"
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: "Year"
+          }
         }
       }
-    }
-  });
-
-  const pieChart = new Chart(document.getElementById("pieChart"), {
-    type: 'doughnut',
-    data: {
-      labels: ["Recovered", "In Recovery", "Still Addicted"],
-      datasets: [{
-        label: "Recovery Status",
-        data: [25, 45, 30],
-        backgroundColor: ["#2ecc71", "#f1c40f", "#e74c3c"]
-      }]
-    },
-    options: {
-      plugins: {
-        title: {
-          display: true,
-          text: "Global Recovery Progress"
-        }
-      },
-      responsive: true
     }
   });
 </script>
