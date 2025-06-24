@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecoveryAI - Combat Drug Addiction with AI</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background-color: #292b2c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .charts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    canvas {
+      max-width: 500px;
+      margin: 20px auto;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #292b2c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RecoveryAI</h1>
+  <p>Smart Recovery Powered by Artificial Intelligence</p>
+</header>
+
+<section>
+  <h2>About the Project</h2>
+  <p>
+    RecoveryAI is an innovative solution that uses artificial intelligence to help prevent drug addiction, assist in recovery, and provide early warning signs of relapse. This system analyzes behavior patterns, tracks health data, and provides personalized support for people recovering from substance use disorders.
+  </p>
+
+  <h3>Goals</h3>
+  <ul>
+    <li>Use AI to detect relapse signs early.</li>
+    <li>Provide support tools for addicts and their families.</li>
+    <li>Educate the public on drug misuse through interactive data and AI insights.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Global Drug Abuse Statistics</h2>
+  <div class="charts">
+    <canvas id="barChart"></canvas>
+    <canvas id="pieChart"></canvas>
+  </div>
+</section>
+
+<section>
+  <h2>How RecoveryAI Works</h2>
+  <p>
+    The system uses machine learning to analyze data from users, including mood logs, chat responses, and physical symptoms (from connected health trackers if available). It alerts caretakers or professionals when a risk is detected.
+  </p>
+
+  <h3>Key Features:</h3>
+  <ul>
+    <li>Chatbot assistant for daily check-ins</li>
+    <li>Emotion detection from responses</li>
+    <li>Recovery progress tracker</li>
+    <li>Educational AI quizzes for awareness</li>
+  </ul>
+</section>
+
+<footer>
+  © 2025 RecoveryAI Team | Powered by Innovation & Compassion
+</footer>
+
+<script>
+  const barChart = new Chart(document.getElementById("barChart"), {
+    type: 'bar',
+    data: {
+      labels: ["Opioids", "Cannabis", "Cocaine", "Amphetamines", "Alcohol"],
+      datasets: [{
+        label: "Global Addicted Population (Millions)",
+        data: [53, 192, 21, 34, 237],
+        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: "Drug Usage by Type (Global Data)"
+        }
+      }
+    }
+  });
+
+  const pieChart = new Chart(document.getElementById("pieChart"), {
+    type: 'pie',
+    data: {
+      labels: ["Recovered", "In Treatment", "Still Addicted"],
+      datasets: [{
+        data: [25, 45, 30],
+        backgroundColor: ['#2ecc71', '#f1c40f', '#e74c3c']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: "Recovery Status Overview"
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
